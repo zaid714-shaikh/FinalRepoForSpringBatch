@@ -5,12 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
@@ -62,16 +60,19 @@ public class homeController {
 
 	@RequestMapping(value = "/uploadfile", method = RequestMethod.POST)
 	public String uploadFile(@RequestPart MultipartFile file) {
-		
+
 		hs.UploadFile(file);
-		
+
 		return "File uploaded !!! ";
 	}
 
-	public void m1()
-	{
+	public void m1() {
 		System.out.println("change by feature branch");
 	}
 	
-	
+	public void m2()
+	{
+		System.out.println("changes by feature branch");
+	}
+
 }
