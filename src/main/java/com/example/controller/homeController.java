@@ -69,10 +69,11 @@ public class homeController {
 	public void m1() {
 		System.out.println("change by feature branch");
 	}
-	
-	public void m2()
-	{
+
+	public void m2() {
+
 		System.out.println("changes by feature branch");
+		System.out.println("changes by feature1 branch");
 	}
 
 }
